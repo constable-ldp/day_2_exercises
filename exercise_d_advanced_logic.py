@@ -46,5 +46,16 @@ print(sum(numbers))
 #
 #    So [5, 13, 2] would have sum of 5.
 
+numbers = [1, 6, 2, 2, 7, 1, 6, 13, 99, 7]
+
+total = 0
+
 for i in range(len(numbers)):
-    
+    if numbers[i] == 13 or numbers[i-1] == 13:
+        pass
+    else:
+        total+=numbers[i]
+print(total)
+
+
+
